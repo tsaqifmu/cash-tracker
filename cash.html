@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <title>CASH TRACKER</title>
+  </head>
+  <body class="bg-emerald-300">
+    <div class="px-3 py-7 bg-slate-200 rounded-b-[50px]">
+      <div class="flex flex-col justify-center">
+        <h1 class="text-slate-800 text-center text-5xl font-semibold">Expense Tracker</h1>
+        <h2 class="mt-4 text-green-600 text-center text-3xl font-semibold">Add A New Item</h2>
+      </div>
+      <div class="mt-6 flex flex-wrap">
+        <label class="w-1/2 px-3 py-4" for="name">
+          <span>Name</span>
+          <input class="w-full mt-0 block px-0.5 bg-transparent border-0 border-b-2 border-green-400 focus:ring-0 focus:border-black" type="text" name="name" id="name" />
+        </label>
+        <label class="w-1/2 px-3 py-6" for="date">
+          <span>Date</span>
+          <input class="w-full mt-0 block px-0.5 bg-transparent border-0 border-b-2 border-green-400 focus:ring-0 focus:border-black" type="date" name="date" id="date" />
+        </label>
+        <label class="w-1/2 px-3 py-6" for="amount">
+          <span> Amount</span>
+          <input class="w-full mt-0 block px-0.5 bg-transparent border-0 border-b-2 border-green-400 focus:ring-0 focus:border-black" type="number" name="amount" id="amount" />
+        </label>
+        <label class="w-1/2 px-3 py-6" for="description">
+          <span>Description</span>
+          <input class="w-full mt-0 block px-0.5 bg-transparent border-0 border-b-2 border-green-400 focus:ring-0 focus:border-black" type="text" name="description" id="description" />
+        </label>
+      </div>
+      <div class="flex justify-center">
+        <button class="bg-green-600 px-4 py-2 text-white rounded-md shadow-md transition-all duration-200 ease-in-out hover:bg-green-800">Add Expense</button>
+      </div>
+    </div>
+    <main class="overflow-x-auto mt-7 p-3 flex justify-center">
+      <table class="bg-white divide-y divide-green-300 rounded-lg overflow-hidden">
+        <thead>
+          <tr class="bg-slate-100">
+            <th scope="col" class="py-3 px-6 text-start">Remove</th>
+            <th scope="col" class="py-3 px-6 text-start">Name</th>
+            <th scope="col" class="py-3 px-6 text-start">Amount</th>
+            <th scope="col" class="py-3 px-6 text-start">Date</th>
+            <th scope="col" class="py-3 px-6 text-start">Description</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-green-300">
+          <tr>
+            <td class="data text-center"><button>❌</button></td>
+            <td class="data">qwqweqwe</td>
+            <td class="data">2123123</td>
+            <td class="data">2022-09-02</td>
+            <td class="data whitespace-nowrap">asdfasdfasdf</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
